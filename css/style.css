@@ -1,0 +1,473 @@
+.cd__dashboard_body{
+    padding: 20px;
+    position: relative;
+}
+.cd__courses_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.cd__courses_list img{
+    width: 100%;
+}
+.cd__dashboard_body {
+    min-height: 600px;
+    overflow-y: auto;
+}
+.cd__dashboard_tab_body{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #F9FAFB;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+.cd__dashboard_tab_body_result{
+    margin-bottom: 20px;
+}
+.cd__key_copy_result{
+    width: 181px;
+    font-size: 12px;
+    padding: 0 20px;
+    position: absolute;
+    right: 0;
+}
+.cd__profile input[type="text"],
+.cd__profile input[type="password"],
+.cd__profile input[type="email"]{
+    margin-bottom: 10px;
+}
+.cd__hidden_form_box{
+    display: none;
+}
+.cd__breadcrumb_closed{
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+.cd__breadcrumb_closed:hover{
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+/*new*/
+
+.cd__container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cd__tabs_nav,
+.scbt__account_tabs_nav{
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+.cd__tabs_nav_item,
+.scbt__account_tab{
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin: 0;
+    padding: 5px 10px;
+    margin-right: 3px;
+    background-color: #c50000;
+    color: #fff;
+}
+.cd__tabs_nav_item.active,
+.scbt__account_tab.active{
+    background-color: #63666A;
+}
+.cd__tabs_nav_item:last-child{
+    margin-right: 0;
+}
+.cd__programs_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.cd__programs_item{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+.cd__programs_item img{
+    width: 100%;
+}
+.cd__programs_item_title{
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 10px;
+    min-height: 81px;
+}
+.cd__account{
+    padding: 40px 0;
+}
+.cd__creation_steps{
+    background-color: #fff;
+    padding: 20px;
+}
+.cd__step_title{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.cd__step button{
+    margin-right: 5px;
+    position: relative;
+}
+.cd__step_2{
+    display: none;
+}
+.cd__steps_warnings > div{
+    border: 2px solid red;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.cd__program_details .success,
+.cd__program_details .warning{
+    border: 2px solid red;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.cd__program_details .success span,
+.cd__program_details .warning span{
+    font-weight: 600;
+    color: #c50000;
+}
+.cd__steps_warnings > div.success,
+.cd__program_details .success{
+    border: 2px solid green;
+}
+
+.cd__step label{
+    font-weight: 600;
+    margin-top: 10px;
+}
+.cd__program_details{
+    padding: 80px 0;
+    min-height: 100px;
+    display: none;
+    position: relative;
+}
+.cd__programs_item,
+.cd_program .cd__programs_item,
+.cd__step .cd__programs_item,
+.cd_key_program .cd__programs_item{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cd__programs_item:hover,
+.cd_program .cd__programs_item:hover,
+.cd__step .cd__programs_item:hover,
+.cd_key_program .cd__programs_item:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cd__step_toggler{
+    display: flex;
+    align-items: center;
+        margin-top: 20px;
+}
+.cd__program_save,
+.cd__program_separate_save{
+    margin-top: 20px;
+}
+.cd__step_toggler svg{
+    position: relative;
+    top: -1px;
+}
+.cd__step_toggler_wrapper .cd__step_toggler svg{
+    position: relative;
+    top: 0;
+}
+.cd__step_toggler_wrapper{
+    display: flex;
+    margin-top: 20px;
+}
+.cd__program_checkbox_wrapper{
+    margin-bottom: 20px;
+}
+.cd__modal_wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+.cd__modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.cd__modal_back {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cd__modal_content{
+    min-width: 300px;
+    min-height: 300px;
+    background-color: #fff;
+    z-index: 1;
+    position: relative;
+}
+.cd__modal_close{
+    position: absolute;
+    right: 14px;
+    top: 10px;
+}
+.cd__modal_toggler{
+    cursor: pointer;
+    z-index: 1;
+}
+.cd__loader{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cd__modal_result{
+    padding: 40px;
+    overflow: auto;
+    max-height: 90vh;
+}
+
+.cd__chose_by_chapter_result{
+    margin: 20px 0;
+}
+
+.cd__account_wrapper{
+    width: 100%;
+}
+.cd__create_program{
+    position: relative;
+    min-height: 150px;
+}
+.cd__lk_header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.cd__lk_header_title{
+    font-size: 24px;
+}
+.scrolltop{
+    padding: 0;
+}
+.cd__chapters{
+    max-width: 800px;
+}
+.cd__chapters label{
+    line-height: 1;
+}
+.cd__chapters ul{
+    list-style: none;
+}
+.cd__list_item_not_open{
+    color: rgba(0,0,0,0.5);
+    font-weight: 300;
+}
+.cd__list_item_open{
+    color: #333;
+    font-weight: 600;
+}
+.cd__list_has_not_children.cd__list_item_not_open{
+    display: none;
+}
+.cd__program_hierarchy_list .treeview li{
+    line-height: 1;
+}
+.cd__program_hierarchy_list .treeview li a{
+    padding-bottom: 20px;
+    display: block;
+}
+.cd__add_new_student_form{
+    display: none;
+}
+.cd__send_program_details_document_result,
+.cd__update_profile_result{
+    position: relative;
+    margin: 20px 0;
+}
+.cd__hidden_form_toggler{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.cd__hidden_form_toggler svg{
+    margin-right: 3px;
+}
+.cd__progress_value{
+    color: #c50000;
+}
+.cd__table_select_all_label{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.cd__table_select_all_label input{
+    margin-right: 3px;
+}
+.cd__tab_details_title{
+    margin: 20px 0;
+    font-size: 18px;
+}
+.cd__student_control_details_download_students_info_result{
+    padding: 20px 0;
+    position: relative;
+}
+
+.scbt__account_tabs_nav{
+    margin-bottom: 20px;
+}
+.scbt__account_tab{
+
+}
+.scbt__account_form{
+    display: none;
+}
+.scbt__account_form.active{
+    display: block;
+}
+.cd__videos{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.cd__videos video {
+    width: 100%;
+}
+.cd__video_title{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.cd__video_description{
+    margin: 10px 0;
+}
+.cd__students_mass_adding{
+    margin: 20px 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 20px;
+}
+[name="cd__students_mass_file"]{
+    margin-bottom: 10px;
+}
+.cd__students_mass_template_link{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.cd__students_mass_adding_button_wrp{
+    margin: 10px 0;
+}
+.cd__checkbox_status_4_li input{
+    display: none;
+}
+.cd__checkbox_status_4_li input:checked{
+    display: inline-block;
+}
+.cd__chapters_list_item_label{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cd__chapters_list_item:hover .cd__chapters_list_item_label{
+    background-color: rgba(0,0,0,0.02);
+}
+
+.cd__chapters .cd__chapters_list_item{
+    position: relative;
+}
+.cd__chapters .cd__chapters_list_level_1 .cd__chapters_list_item label{
+    padding-right: 40px;
+}
+.cd__chapters_list_item_description{
+    position: absolute;
+    right: 0;
+    top:0;
+    color: #c50000;
+    cursor: pointer;
+    z-index: 1;
+    text-align: right;
+}
+.cd__chapters_list_item_description_content{
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    position: absolute;
+    right: 30px;
+    top: -10px;
+    min-width: 400px;
+    text-align: left;
+    color: #333;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+.cd__chapters_list_item_description svg{
+    opacity: 0.1;
+    transition: 0.5s;
+}
+.cd__chapters_list_item:hover > .cd__chapters_list_item_description svg{
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .cd__videos{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*.cd__chapters_list_level_1, .cd__chapters_list_level_1 ul, .cd__chapters_list_level_1 li {*/
+/*    margin: 0; padding: 0; line-height: 1.2; list-style: none;*/
+/*}*/
+/*.cd__chapters_list_level_1 ul {margin: 0 0 0 15px; !* отступ вертикальной линии *!}*/
+/*.cd__chapters_list_level_1 > li:not(:only-child), .cd__chapters_list_level_1 li li {*/
+/*    position: relative;*/
+/*    padding: 3px 0 0 20px; !* отступ текста *!*/
+/*}*/
+/*!* Стиль вертикальной линии *!*/
+/*.cd__chapters_list_level_1 li:not(:last-child) { border-left: 1px solid #ccc;}*/
+/*!* Стили горизонтальной линии*!*/
+/*.cd__chapters_list_level_1 li li:before, .cd__chapters_list_level_1 > li:not(:only-child):before {*/
+/*    content: ""; position: absolute; top: 0; left: 0;*/
+/*    width: 1.1em; height: .7em; border-bottom:1px solid #ccc;*/
+/*}*/
+/*!* Вертикальная линия последнего пункта в списка *!*/
+/*.cd__chapters_list_level_1 li:last-child:before {*/
+/*    width: calc(1.1em - 1px); border-left: 1px solid #ccc;*/
+/*}*/
+/*.cd__chapters_list_level_1 .drop {*/
+/*    position: absolute; left: -6px; top: 5px; width: 11px;*/
+/*    height: 11px; line-height: 1em; text-align: center;*/
+/*    background: #9F9F9F; color: #fff; !* Фон и цвет кнопки, раскрывающей список *!*/
+/*    font-size: 78%; !* Размер +/- *!*/
+/*    cursor: pointer; -webkit-user-select: none; -moz-user-select: none;*/
+/*}*/
+/*.cd__chapters_list_level_1 li:last-child > .drop {margin-left: 1px;}*/
+/*.cd__chapters_list_level_1 .drop + ul {display: none;}*/
+/*.cd__chapters_list_level_1 .dropM + ul {display: block;}*/
